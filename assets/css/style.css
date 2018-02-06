@@ -1,0 +1,9 @@
+body {
+    background-image: url("../images/seigaiha.png");
+    opacity: 20%;
+}
+
+img {
+    height: 125px;
+    width: 125px;
+}
