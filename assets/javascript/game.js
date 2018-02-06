@@ -1,11 +1,12 @@
     $(document).ready(function () {
 
     // variables declare here
-    var randomNumber = (Math.floor(Math.random() * (120 - 19 + 1) + 19));
-    var firstCrystal = (Math.floor(Math.random() * 11) + 1);
-    var secondCrystal = (Math.floor(Math.random() * 11) + 1);
-    var thirdCrystal = (Math.floor(Math.random() * 11) + 1);
-    var fourthCrystal = (Math.floor(Math.random() * 11) + 1);
+    var randomNumber = Math.floor(Math.random() * 102) + 19; 
+        $("#randomNumber").text(randomNumber);
+    var firstCrystal = (Math.floor(Math.random() * 12) + 1);
+    var secondCrystal = (Math.floor(Math.random() * 12) + 1);
+    var thirdCrystal = (Math.floor(Math.random() * 12) + 1);
+    var fourthCrystal = (Math.floor(Math.random() * 12) + 1);
 
     var userScore = 0;
     var wins = 0;
@@ -21,14 +22,12 @@
 
     // reset 
     var reset = function() {
-        randomNumber = (Math.floor(Math.random() * (120 - 19 + 1) + 19));
-        $("#random-number").text(randomNumber);
-
-
-        firstCrystal = (Math.floor(Math.random() * 11) + 1);
-        secondCrystal = (Math.floor(Math.random() * 11) + 1);
-        thirdCrystal = (Math.floor(Math.random() * 11) + 1);
-        fourthCrystal = (Math.floor(Math.random() * 11) + 1);
+        randomNumber = Math.floor(Math.random() * 102) + 19; 
+        $("#randomNumber").text(randomNumber);
+        firstCrystal = (Math.floor(Math.random() * 12) + 1);
+        secondCrystal = (Math.floor(Math.random() * 12) + 1);
+        thirdCrystal = (Math.floor(Math.random() * 12) + 1);
+        fourthCrystal = (Math.floor(Math.random() * 12) + 1);
         userScore = 0;
         $("#user-score").text(userScore);
     }
